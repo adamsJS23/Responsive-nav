@@ -20,7 +20,7 @@ a{
 
 header{
   background-color: #dbe1ed;
-  padding: 2rem;
+  padding: 2.5rem 0;
 }
 
 .wrapper{
@@ -32,9 +32,10 @@ header{
 .logo{
   color: #0460bc;
   font-size: 2.2rem;
+  font-weight: 700;
 }
 
-.dflex{
+.navbar{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,34 +43,35 @@ header{
 
 .nav__list{
   display: flex;
-  /* flex: 1; */
   list-style: none;
   gap: 3.6rem;
 }
 
-.nav__list li:last-child{
-  margin-left: auto;
-}
-
-.nav__link{
+.nav__link:is(:link,:visited){
   font-size: 1.8rem;
   color: #000;
+}
+
+.nav__link--active{
+  font-weight: 700;
 }
 
 .nav__link:hover{
   color: #0460bc;
 }
 
-.nav__link:visited{
-  font-weight: 700;
-}
 
 .nav__cta{
   display: flex;
   align-items: center;
   gap: 1rem;
   background-color: #c3ccd7;
+  color: #000;
   font-size: 1.8rem;
   padding: .4rem 1.2rem;
   border-radius: 4px;
+}
+
+.nav__cta:hover{
+  background-color: #b5c0ce;
 }
