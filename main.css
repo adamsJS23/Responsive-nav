@@ -110,3 +110,27 @@ header {
 .nav__cta:hover {
   background-color: #b5c0ce;
 }
+
+@media only screen and (min-width:48em){
+
+  .btn-open,.btn-close{
+    display: none;
+  }
+
+  .nav {
+    position: relative;
+    right: 0;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    align-items: center;
+    gap: 3.6rem;
+  }
+
+  
+}
