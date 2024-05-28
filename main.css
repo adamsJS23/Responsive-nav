@@ -44,15 +44,17 @@ header {
 .nav {
   position: fixed;
   top: 0;
-  right: -100%;
+  right: 0;
+  transform: translateX(100%);
   width: 66%;
   height: 100vh;
   background-color: #fff;
   padding: 4.6rem;
+  transition: all ease 0.5s;
 }
 
-.show-nav{
-  right: 0;
+.show-nav {
+  transform: translateX(0);
 }
 
 .btn-close {
@@ -74,7 +76,7 @@ header {
   list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   gap: 3.6rem;
 }
 
@@ -111,15 +113,15 @@ header {
   background-color: #b5c0ce;
 }
 
-@media only screen and (min-width:48em){
-
-  .btn-open,.btn-close{
+@media only screen and (min-width: 48em) {
+  .btn-open,
+  .btn-close {
     display: none;
   }
 
   .nav {
     position: relative;
-    right: 0;
+    transform: translateX(0);
     width: auto;
     height: auto;
     background-color: transparent;
@@ -131,6 +133,4 @@ header {
     align-items: center;
     gap: 3.6rem;
   }
-
-  
 }
