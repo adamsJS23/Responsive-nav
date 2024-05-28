@@ -1,77 +1,112 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
-html{
+html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
 
-body{
-  font-family: 'Nunito', sans-serif;
+body {
+  font-family: "Nunito", sans-serif;
   background-color: #e9edf1;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-header{
+header {
   background-color: #dbe1ed;
   padding: 2.5rem 0;
 }
 
-.wrapper{
+.wrapper {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.logo{
+.logo {
   color: #0460bc;
   font-size: 2.2rem;
   font-weight: 700;
 }
 
-.navbar{
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.nav__list{
-  display: flex;
+.nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 66%;
+  height: 100vh;
+  background-color: #fff;
+  padding: 4.6rem;
+}
+
+.show-nav{
+  right: 0;
+}
+
+.btn-close {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 6.6rem;
+}
+
+.btn-open {
+  width: 3rem;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+
+.nav__list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   gap: 3.6rem;
 }
 
-.nav__link:is(:link,:visited){
+.nav__link:is(:link, :visited) {
   font-size: 1.8rem;
   color: #000;
 }
 
-.nav__link--active{
+.nav__link--active {
   font-weight: 700;
 }
 
-.nav__link:hover{
+.nav__link:hover {
   color: #0460bc;
 }
 
+.mobile-cart-menu {
+  display: flex;
+  gap: 2rem;
+}
 
-.nav__cta{
+.nav__cta {
   display: flex;
   align-items: center;
   gap: 1rem;
   background-color: #c3ccd7;
   color: #000;
   font-size: 1.8rem;
-  padding: .4rem 1.2rem;
+  padding: 0.4rem 1.2rem;
   border-radius: 4px;
 }
 
-.nav__cta:hover{
+.nav__cta:hover {
   background-color: #b5c0ce;
 }
