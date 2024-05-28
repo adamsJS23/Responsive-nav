@@ -31,5 +31,17 @@
         </div>
       </div>
     </header>
+    <script>
+      const btnOpen = document.querySelector(".btn-open");
+      const btnClose = document.querySelector(".btn-close");
+      const mobileMenu = document.querySelector(".nav");
+
+      [btnOpen, btnClose].forEach((evt) => {
+        evt.addEventListener("click", () => {
+          mobileMenu.classList.toggle("show-nav");
+        });
+      });
+      
+    </script>
   </body>
 </html>
