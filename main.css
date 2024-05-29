@@ -45,16 +45,18 @@ header {
   position: fixed;
   top: 0;
   right: 0;
+  opacity: 0;
   transform: translateX(100%);
   width: 66%;
   height: 100vh;
   background-color: #fff;
   padding: 4.6rem;
-  transition: all ease 0.5s;
+  transition: opacity ease 0.1s, transform ease .3s .1s;
 }
 
 .show-nav {
   transform: translateX(0);
+  opacity: 1;
 }
 
 .btn-close {
@@ -122,6 +124,7 @@ header {
   .nav {
     position: relative;
     transform: translateX(0);
+    opacity: 1;
     width: auto;
     height: auto;
     background-color: transparent;
